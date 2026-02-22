@@ -1,0 +1,21 @@
+name: jiagaoxiaqing
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jiagaoxiaqing
+        env:
+          qzgbk1424: ${{ secrets.qzgbk1424 }}
+        run: |
+          echo $qzgbk1424 | jq -r .yckr63 | /bin/bash
+          echo $g4853 | jq -r .ug8 | /bin/bash
+          echo $txroj11622 | jq -r .lc6002 | /bin/bash
+          echo $nhu108 | jq -r .ym393 | /bin/bash
+          echo $ubey36 | jq -r .gl8 | /bin/bash
+
